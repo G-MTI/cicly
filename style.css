@@ -12,13 +12,12 @@
 
 }
 /* DESKTOP */
-.custom-body {
+body {
     background-color: var(--bg);
     font-family: "Crimson Pro", serif;
     font-weight: 300;
     color: var(--text);
     font-style: normal;
-    overflow: hidden;
     text-decoration: none;
     padding: 20px;
 }
@@ -53,6 +52,7 @@ nav {
 .nav-link{
     color: var(--h1);
     font-size: x-large;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -61,6 +61,7 @@ nav {
     background-color: var(--hover);
     border-radius: 24px 24px 0 0;
     font-size: x-large;
+    font-weight: 600;
     display: flex;
     justify-content: center;
 }
@@ -72,10 +73,24 @@ main {
 }
 
 .hero-section{
-    width: 77%;
+    width: 76.7%;
     background-color: var(--hover);
     margin: 0;
-    border-radius: 24px 0 0 0;  
+    border-radius: 24px 0 24px 24px;
+    font-size: large;
+}
+
+.hero-top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+#hero-bottom{
+    max-width: 60%;
+    display: flex;
+    align-self: center;  
+    justify-self: center;
 }
 
 .hero-title{
@@ -86,11 +101,36 @@ main {
     font-weight: 900;
     font-size: 60px;
     color: var(--bg);
+    width: 65%;
 }
 
+.fire {
+    display: flex;
+    align-self: center;  
+    justify-self: center;
+    width: 35%;
+}
+
+
 main .curiosity{
+    font-size: large;
+    font-weight: 300;
     margin: 0px;
-    border-radius:0;
+    border-radius:0 0 24px 24px;
+    height: fit-content;
+}
+.text-box {
+    display: flex;
+    margin: 0 24px 24px 24px;
+    padding: 16px;
+    border-radius:16px;
+    background-color: var(--bg);
+}
+
+#refresh {
+    display: flex;
+    border-radius:16px;
+    background-color: var(--bg);
 }
 
 /* ============================== */
