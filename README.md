@@ -1,4 +1,4 @@
-# newspaper-esque website made for my friend's request
+# Cycly-know your cycle
 
 Cicly is an educational website designed to provide clear, friendly, and accessible information about the menstrual cycle. The project aims to support young people, especially girls, who may not have someone to ask or trustworthy resources to rely on.
 
