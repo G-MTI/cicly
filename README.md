@@ -4,4 +4,4 @@ Cicly is an educational website designed to provide clear, friendly, and accessi
 
 Website by Gaia Mazzanti
 
-[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fawar
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
