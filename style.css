@@ -12,7 +12,13 @@
 
 }
 /* DESKTOP */
+html{
+    height: 100vh;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg);
     font-family: "Crimson Pro", serif;
     font-weight: 300;
@@ -63,10 +69,12 @@ nav {
     font-size: x-large;
     font-weight: 600;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: row;
     gap: 24px
@@ -87,10 +95,10 @@ main {
 }
 
 #hero-bottom{
-    max-width: 60%;
     display: flex;
-    align-self: center;  
-    justify-self: center;
+    flex-direction: column;
+    align-content: center;  
+    justify-content: center;
 }
 
 .hero-title{
@@ -117,20 +125,41 @@ main .curiosity{
     font-weight: 300;
     margin: 0px;
     border-radius:0 0 24px 24px;
-    height: fit-content;
 }
 .text-box {
-    display: flex;
     margin: 0 24px 24px 24px;
     padding: 16px;
     border-radius:16px;
     background-color: var(--bg);
+    display: flex;
+    align-self: center;  
+    justify-self: center;
+}
+
+.curiosity-inner{
+    display: flex;
+    flex-direction: column;
+    align-content: center;  
+    justify-content: center;
 }
 
 #refresh {
-    display: flex;
+    
     border-radius:16px;
     background-color: var(--bg);
+    max-width: fit-content;
+}
+
+footer{
+    background-color: var(--hover);
+    font-family: "Crimson Pro", serif;
+    font-weight: 300;
+    color: var(--text);
+    font-style: normal;
+    text-decoration: none;
+    padding: 20px;
+    border-radius:24px;
+    margin-top: 24px;
 }
 
 /* ============================== */
