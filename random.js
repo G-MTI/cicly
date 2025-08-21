@@ -11,9 +11,27 @@ const facts = [
     "It is normal for cycles to be irregular in the first years after menarche."
 ];
 
-const randomIndex = Math.floor (Math.random()*facts.length);
+const randomFact = Math.floor (Math.random()*facts.length);
 const factBox = document.getElementById("random-fact");
-factBox.textContent = facts[randomIndex];
+factBox.textContent = facts[randomFact];
+
+const definition = [
+    "Menarche – The first menstruation in a person's life.",
+    "Spotting – Small amounts of bleeding between cycles.",
+    "PMS (Premenstrual Syndrome) – Physical and/or emotional symptoms that occur before menstruation.",
+    "Ovulation – The release of an egg from the ovary, usually mid-cycle.",
+    "Follicular phase – Period that starts on the first day of menstruation and ends with ovulation; the uterus and ovaries prepare for the egg.",
+    "Luteal phase – Period after ovulation until the start of menstruation; PMS may occur.",
+    "Amenorrhea – Absence of menstruation for a prolonged period.",
+    "Dysmenorrhea – Menstrual pain and cramps.",
+    "Endometrium – Inner layer of the uterus that thickens and sheds during the cycle.",
+    "Perimenopause – Period preceding menopause, characterized by changes in the cycle and symptoms."
+];
+
+const randomDefinition = Math.floor (Math.random()*definition.length);
+const definitionBox = document.getElementById("random-definition");
+definitionBox.textContent = definition[randomDefinition];
+
 
 const link = document.getElementById("refresh");
 link.addEventListener("click", function(event) {
