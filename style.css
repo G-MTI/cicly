@@ -55,6 +55,7 @@ nav {
     margin: 0 24px 0 24px;
 
 }
+
 .nav-link{
     color: var(--h1);
     font-size: x-large;
@@ -160,7 +161,77 @@ footer{
     padding: 20px;
     border-radius:24px;
     margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card { 
+    margin-top: 24px;
+    border-radius:24px;
+    background-color: var(--hover);
+    padding: 20px;
+    width: 25%;
+}
+
+.card p {
+    background-color: var(--bg);
+    padding: 16px;
+    border-radius:16px;
+}
+
+.card a {
+    width: 100%;
+}
+
+.controls {
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 24px;
+  background: var(--hover);
+  color: var(--bg);
+  font-size: x-large;
+  font-weight: 600;
+  box-shadow: 0 4px 8px var(--h1);
+}
+
+#search {
+  border: none;
+  padding: 20px;
+  border-radius: 24px;
+  background: var(--hover);
+  color: var(--bg);
+  font-size: large;
+  height: fit-content;
+  box-shadow: 0 4px 8px var(--h1);
+
+}
+
 
 /* ============================== */
 /* TABLET*/
