@@ -190,6 +190,7 @@ footer{
     background-color: var(--hover);
     padding: 20px;
     width: 25%;
+    display: none;
 }
 
 .card p {
