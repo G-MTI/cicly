@@ -5,9 +5,9 @@
   --h1: #222222;
   --text: #363636;
   --menstual: #e63946;
-  --Follicular: #4CC9F0;
-  --Ovulation: #FFB703;
-  --Luteal: #9D4EDD;
+  --follicular: #4CC9F0;
+  --ovulation: #FFB703;
+  --luteal: #9D4EDD;
 
 
 }
@@ -232,6 +232,21 @@ footer{
   box-shadow: 0 4px 8px var(--h1);
 
 }
+
+.info-phases { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.phase { 
+    margin: 0 24px 24px 24px;
+    border-radius:24px;
+    padding: 20px;
+    box-shadow: 0 4px 8px var(--h1);
+}
+
 
 
 /* ============================== */
