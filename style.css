@@ -1,6 +1,6 @@
 :root{
-  --unify: #E7545E;
-  --hover: #FF6F61;
+  --hovere: #f14c75;
+  --hover: #ff71ab;
   --bg: #F5F5F5;
   --h1: #222222;
   --text: #363636;
@@ -82,7 +82,7 @@ main {
 }
 
 .hero-section{
-    width: 76.7%;
+    width: 77%;
     background-color: var(--hover);
     margin: 0;
     border-radius: 24px 0 24px 24px;
@@ -93,6 +93,7 @@ main {
     display: flex;
     flex-direction: row;
     margin-bottom: 24px;
+    gap: 0px;
 }
 
 #hero-bottom{
