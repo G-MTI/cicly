@@ -33,6 +33,7 @@ nav {
     flex-direction: row;
 }
 
+
 .nav-logo{
     text-decoration: none;
     font-size: 50px;
@@ -73,6 +74,11 @@ nav {
     flex-direction: column;
     align-items: center;
 }
+
+#rfac {
+    display: none;
+}
+
 
 main {
     flex: 1;
@@ -168,6 +174,11 @@ footer{
     align-items: center;
 }
 
+label{
+    display: flex; 
+    flex: 1;
+}
+
 .top{
     width: 100%;
     display: flex;
@@ -193,6 +204,7 @@ footer{
     padding: 20px;
     width: 25%;
     display: none;
+    min-width: 300px;
 }
 
 .card p {
@@ -235,11 +247,15 @@ footer{
 
 }
 
-.info-phases { 
+.info-phases-desk { 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.info-phases-mobile { 
+    display: none;
 }
 
 .phase { 
@@ -256,6 +272,18 @@ table { margin: 20px auto; border-collapse: collapse; }
     .ovulazione { background-color: var(--ovulation); color: white; }
     .luteale { background-color: var(--luteal); color: white; }
 
+.result{
+    display:flex; 
+    flex-direction: row;
+}
+
+.result-inner {
+    width: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
 .disclaimer { 
     border-radius:24px;
     background-color: var(--hover);
@@ -269,16 +297,86 @@ table { margin: 20px auto; border-collapse: collapse; }
 /* ============================== */
 /* TABLET*/
 @media (max-width: 1080px) {
-.nav-bar{
-    width: 100%;
-    margin: 0 0 0 24px;
+.icon-hamburger {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;  
+    align-self: center;
+    margin: 0;
+    gap: 12px;
+    height: 50px;
+    width: 50px;
 }
-.curiosity{
+
+.icon-hamburger span {        
+    height: 3px;                 
+    background-color: var(--h1);
+    width: 36px;
+}
+
+.nav-bar{
+  position: absolute;
+  top:76px;
+  background-color: var(--munu_color);
+  width: 30%;
+  min-width: 400px;
+  height: 100vh;
+  height: 0vh;
+  overflow: hidden;
+  transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+main .curiosity {
+    flex-direction: row;
+    width: 100%;
+    border-radius: 24px;
+}
+
+nav .curiosity{
     display: none;
 }
+
+main {
+    flex-direction: column;
+}
+
 .hero-section{
     width: 100%;
 }
+
+#rfac {
+    display: block;
+}
+
+label{
+    display: none;
+}
+
+.top{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.result{
+    display:flex; 
+    flex-direction: column;
+}
+
+.result-inner {
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.info-phases-desk{
+    display: none;
+}
+
+.info-phases-mobile { 
+    display: block;
+}
+
 }
 
 /* MOBILE*/
