@@ -142,13 +142,13 @@ main {
     width: 35%;
 }
 
-
 main .curiosity{
     font-size: large;
     font-weight: 300;
     margin: 0px;
     border-radius:0 0 24px 24px;
 }
+
 .text-box {
     margin: 0 24px 24px 24px;
     padding: 16px;
@@ -307,8 +307,6 @@ table { margin: 20px auto; border-collapse: collapse; }
 
 }
 
-
-/* ============================== */
 /* TABLET*/
 @media (max-width: 1080px) {
 .s{
@@ -344,16 +342,24 @@ table { margin: 20px auto; border-collapse: collapse; }
   transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 
-.nav-bar a{display: flex; flex-direction: column;} 
-.nav-bar a{color:var(--h1); display: block;padding: 20px;font-size: 15p; background-color: var(--hover);}
-.nav-bar a{width: 100%;}
+.nav-bar a{
+    color:var(--h1); 
+    display: block;
+    padding: 20px;
+    font-size: 15p; 
+    background-color: var(--hover);
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+}
 
-.menu-open .nav-bar{height: fit-content;}
+.menu-open .nav-bar{
+    height: fit-content;
+}
 
 .menu-open .icon-hamburger span:nth-child(1){transform: rotate(-40deg) translateY(9px);}
 .menu-open .icon-hamburger span:nth-child(2){transform: rotate(40deg) translateY(-9px);}
   
-
 main .curiosity {
     flex-direction: row;
     width: 100%;
@@ -435,7 +441,7 @@ label{
 #menstrual_mobile, #follicular_mobile, #luteal_mobile, #ovulation_mobile { 
     display: none;    
 }
- 
+
 }
 
 /* MOBILE*/
