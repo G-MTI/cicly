@@ -338,7 +338,6 @@ table { margin: 20px auto; border-collapse: collapse; }
   margin-top:61px;
   right: 1%;
   margin-right: 24px;
-  background-color: var(--jiji);
   width: fit-content;
   height: 0vh;
   overflow: hidden;
@@ -351,15 +350,9 @@ table { margin: 20px auto; border-collapse: collapse; }
 
 .menu-open .nav-bar{height: fit-content;}
 
-
-
-
-
 .menu-open .icon-hamburger span:nth-child(1){transform: rotate(-40deg) translateY(9px);}
 .menu-open .icon-hamburger span:nth-child(2){transform: rotate(40deg) translateY(-9px);}
   
-
-
 
 main .curiosity {
     flex-direction: row;
@@ -385,6 +378,7 @@ main {
 
 .hero-section{
     width: 100%;
+    border-radius: 24px;
 }
 
 #rfac {
