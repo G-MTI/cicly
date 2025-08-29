@@ -35,25 +35,35 @@ nav {
 
 
 .nav-logo{
+    width: 30%; display: flex;
+    justify-content: space-around;
+}   
+.cicly{
     text-decoration: none;
     font-size: 50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-style: normal;
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-content:center;
     color: var(--h1);
-}   
+    
+}  
+
+.r{
+    width: 74%;
+    border-radius: 24px 24px 0 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .nav-bar{
     background-color: var(--hover);
-    width: 60%;
     border-radius: 24px 24px 0 0;
     display: flex;
     align-items: center;
+    padding-left: 24px;
+    width: 70%;
     justify-content: space-around;
-    margin: 0 24px 0 24px;
 
 }
 
@@ -71,8 +81,10 @@ nav {
     font-size: x-large;
     font-weight: 600;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 #rfac {
@@ -84,11 +96,12 @@ main {
     flex: 1;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     gap: 24px
 }
 
 .hero-section{
-    width: 77%;
+    width: 74%;
     background-color: var(--hover);
     margin: 0;
     border-radius: 24px 0 24px 24px;
@@ -97,9 +110,10 @@ main {
 
 .hero-top{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin-bottom: 24px;
-    gap: 0px;
+    margin: 24px;
+    justify-content: space-around;
 }
 
 #hero-bottom{
@@ -118,7 +132,7 @@ main {
     font-weight: 900;
     font-size: 60px;
     color: var(--bg);
-    width: 65%;
+    width: 50%;
 }
 
 .fire {
@@ -297,6 +311,9 @@ table { margin: 20px auto; border-collapse: collapse; }
 /* ============================== */
 /* TABLET*/
 @media (max-width: 1080px) {
+.s{
+    display: none;
+}
 .icon-hamburger {
     display: flex;  
     flex-direction: column;
@@ -315,16 +332,34 @@ table { margin: 20px auto; border-collapse: collapse; }
 }
 
 .nav-bar{
-  position: absolute;
-  top:76px;
-  background-color: var(--munu_color);
-  width: 30%;
-  min-width: 400px;
-  height: 100vh;
+  position: absolute ;
+  display: flex;
+  flex-direction: column;
+  margin-top:61px;
+  right: 1%;
+  margin-right: 24px;
+  background-color: var(--jiji);
+  width: fit-content;
   height: 0vh;
   overflow: hidden;
   transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
+
+.nav-bar a{display: flex; flex-direction: column;} 
+.nav-bar a{color:var(--h1); display: block;padding: 20px;font-size: 15p; background-color: var(--hover);}
+.nav-bar a{width: 100%;}
+
+.menu-open .nav-bar{height: fit-content;}
+
+
+
+
+
+.menu-open .icon-hamburger span:nth-child(1){transform: rotate(-40deg) translateY(9px);}
+.menu-open .icon-hamburger span:nth-child(2){transform: rotate(40deg) translateY(-9px);}
+  
+
+
 
 main .curiosity {
     flex-direction: row;
@@ -334,6 +369,14 @@ main .curiosity {
 
 nav .curiosity{
     display: none;
+}
+
+.curiosity-inner{
+    width: 50%;
+}
+
+nav{
+    justify-content: space-between;
 }
 
 main {
@@ -375,12 +418,57 @@ label{
 
 .info-phases-mobile { 
     display: block;
+    display: flex;
+    flex-direction: column;
 }
 
+.select { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row;
+    
+}
+
+.inner-select { 
+    margin-top: 24px;
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#menstrual_mobile, #follicular_mobile, #luteal_mobile, #ovulation_mobile { 
+    display: none;    
+}
+ 
 }
 
 /* MOBILE*/
-@media (max-width: 940px) {
+@media (max-width: 840px) {
+
+
+.hero-title{
+    width: 100%;
+}
+
+.curiosity-inner{
+    width: 100%;
+}
+
+.select { 
+    width: 100%; 
+    flex-direction: column;
     
 }
-/* ============================== */
+
+.inner-select { 
+
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+}
